@@ -34,7 +34,9 @@ export const BRAND_INFO = {
   companyName: '澤禾有限公司 (Zeheart)',
   tagline: '讓好油走入尋常百姓家，陪伴家人健康的每一天',
   shortIntro: '源自澤禾。嚴選高山成熟小果與加拿大黃金亞麻籽，堅持第一道物理冷壓初榨，不炒籽、無化學溶劑，提供安心平實的好油。',
-  defaultShopUrl: 'https://www.zeheart.com',
+  defaultShopUrl: 'https://www.zeheart.com/categories/all',
+  camelliaShopUrl: 'https://www.zeheart.com/categories/%E6%BE%A4%E7%A6%BE%E8%8B%A6%E8%8C%B6%E6%B2%B9',
+  flaxseedShopUrl: 'https://www.zeheart.com/categories/%E9%BB%83%E9%87%91%E4%BA%9E%E9%BA%BB%E4%BB%81%E6%B2%B9',
   founderStory: {
     title: '一瓶為家人親手準備的安心油',
     paragraphs: [

@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { OILS_DATABASE, COOKING_TECHNIQUES, OilProfile, CookingTechnique } from '../data/oilData.ts';
 import { Search, Filter, Flame, Thermometer, Check, AlertCircle, Info, Sparkles, ChefHat, ArrowRight, ExternalLink, ShoppingBag } from 'lucide-react';
 import { buildShopUrl } from '../utils/utmHelper.ts';
+import { BRAND_INFO } from '../data/brandData.ts';
 
 interface SmokePointGuideProps {
   shopUrl?: string;
@@ -256,11 +257,11 @@ export const SmokePointGuide: React.FC<SmokePointGuideProps> = ({ shopUrl }) => 
                         {oil.cookingDescriptions[0]}。{oil.healthHighlights[0]}
                       </p>
 
-                      {oil.isSpotlight && shopUrl && (
+                      {oil.isSpotlight && (
                         <div className="mt-3 pt-2.5 border-t border-amber-200/70 flex items-center justify-between gap-2">
                           <span className="text-xs text-amber-900 font-medium">有米的日子 · 100% 第一道冷壓初榨</span>
                           <a
-                            href={buildShopUrl(shopUrl, { medium: 'smokepoint_spotlight_card', content: oil.id })}
+                            href={buildShopUrl(oil.id === 'flaxseed-oil' ? BRAND_INFO.flaxseedShopUrl : BRAND_INFO.camelliaShopUrl, { medium: 'smokepoint_spotlight_card', content: oil.id })}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1A382B] hover:bg-[#12281E] text-white text-xs font-bold transition-all shadow-2xs"

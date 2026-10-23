@@ -21,8 +21,11 @@ export default function App() {
 
   useEffect(() => {
     const savedUrl = localStorage.getItem('zeheart_shop_url');
-    if (savedUrl) {
+    if (savedUrl && savedUrl.includes('zeheart.com')) {
       setShopUrl(savedUrl);
+    } else {
+      setShopUrl(BRAND_INFO.defaultShopUrl);
+      localStorage.setItem('zeheart_shop_url', BRAND_INFO.defaultShopUrl);
     }
 
     // Support deep linking via URL hash (e.g. #smoke-points)

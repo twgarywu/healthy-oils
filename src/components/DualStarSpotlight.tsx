@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Droplets, ShieldAlert, Sparkles, CheckCircle, Flame, Heart, Utensils, AlertTriangle, Snowflake, ExternalLink, ArrowRight, ShoppingBag } from 'lucide-react';
 import { buildShopUrl } from '../utils/utmHelper.ts';
+import { BRAND_INFO } from '../data/brandData.ts';
 
 interface DualStarSpotlightProps {
   shopUrl?: string;
@@ -385,7 +386,7 @@ export const DualStarSpotlight: React.FC<DualStarSpotlightProps> = ({ shopUrl })
                 </div>
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href={buildShopUrl(shopUrl, { medium: 'dualstars_flax_btn', content: 'flaxseed' })}
+                    href={buildShopUrl(BRAND_INFO.flaxseedShopUrl || shopUrl, { medium: 'dualstars_flax_btn', content: 'flaxseed' })}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-5 py-2.5 rounded-full bg-[#C08A3E] hover:bg-[#A8742F] text-white font-bold text-xs sm:text-sm transition-all shadow-xs flex items-center gap-1.5 cursor-pointer font-sans"
@@ -394,7 +395,7 @@ export const DualStarSpotlight: React.FC<DualStarSpotlightProps> = ({ shopUrl })
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                   <a
-                    href={buildShopUrl(shopUrl, { medium: 'dualstars_camellia_btn', content: 'camellia' })}
+                    href={buildShopUrl(BRAND_INFO.camelliaShopUrl || shopUrl, { medium: 'dualstars_camellia_btn', content: 'camellia' })}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-5 py-2.5 rounded-full bg-[#1A382B] hover:bg-[#12281E] text-white font-bold text-xs sm:text-sm transition-all shadow-xs flex items-center gap-1.5 cursor-pointer font-sans"

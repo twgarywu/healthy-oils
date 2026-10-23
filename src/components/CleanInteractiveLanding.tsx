@@ -286,7 +286,7 @@ export const CleanInteractiveLanding: React.FC<CleanInteractiveLandingProps> = (
               </div>
 
               <a
-                href={buildShopUrl(shopUrl, { medium: 'landing_camellia_card', content: 'camellia' })}
+                href={buildShopUrl(BRAND_INFO.camelliaShopUrl || shopUrl, { medium: 'landing_camellia_card', content: 'camellia' })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-7 py-3.5 rounded-full bg-[#1A382B] hover:bg-[#12281E] text-white font-bold text-sm sm:text-base transition-all flex items-center gap-2 cursor-pointer shadow-xs font-sans whitespace-nowrap"
@@ -361,7 +361,7 @@ export const CleanInteractiveLanding: React.FC<CleanInteractiveLandingProps> = (
               </div>
 
               <a
-                href={buildShopUrl(shopUrl, { medium: 'landing_flaxseed_card', content: 'flaxseed' })}
+                href={buildShopUrl(BRAND_INFO.flaxseedShopUrl || shopUrl, { medium: 'landing_flaxseed_card', content: 'flaxseed' })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-7 py-3.5 rounded-full bg-[#C08A3E] hover:bg-[#A8742F] text-white font-bold text-sm sm:text-base transition-all flex items-center gap-2 cursor-pointer shadow-xs font-sans whitespace-nowrap"

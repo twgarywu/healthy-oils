@@ -223,7 +223,7 @@ export const BrandStory: React.FC<BrandStoryProps> = ({
                     {prod.priceNote || '新鮮冷壓初榨製作'}
                   </span>
                   <a
-                    href={buildShopUrl(shopUrl, { medium: 'brandstory_product_card', content: prod.id })}
+                    href={buildShopUrl(isFlax ? BRAND_INFO.flaxseedShopUrl : BRAND_INFO.camelliaShopUrl, { medium: 'brandstory_product_card', content: prod.id })}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3.5 rounded-full bg-[#1A362B] hover:bg-[#13271F] text-white font-bold text-sm sm:text-base shadow-xs transition-all flex items-center justify-center gap-2 cursor-pointer font-sans whitespace-nowrap shrink-0"
