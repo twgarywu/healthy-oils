@@ -155,7 +155,7 @@ export default function App() {
                 className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-[#1A382B] text-white text-sm sm:text-base font-bold hover:bg-[#12281E] transition-all shadow-xs cursor-pointer"
               >
                 <BookOpen className="w-5 h-5 text-amber-300" />
-                <span>返回首頁自測導讀</span>
+                <span>返回首頁</span>
               </button>
             )}
           </div>
