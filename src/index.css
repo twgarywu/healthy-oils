@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-rice-bg: #FBF9F5;
+    --color-rice-card: #FFFFFF;
+    --color-rice-border: #EDE7DC;
+    --color-camellia-dark: #1A382B;
+    --color-camellia-deep: #12281E;
+    --color-camellia-light: #2C5744;
+    --color-amber-gold: #C08A3E;
+    --color-amber-bright: #D99B43;
+    --color-terracotta: #B85D3B;
+    --color-charcoal: #22201D;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", sans-serif;
+    background-color: #FBF9F5;
+    color: #24211E;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.012em;
+    font-size: 16px;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-editorial {
+    font-family: 'Noto Serif TC', 'Songti TC', 'Source Han Serif TC', Georgia, Cambria, serif;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    line-break: strict;
+  }
+
+  h4 {
+    text-wrap: balance;
+  }
+
+  p, li {
+    text-wrap: pretty;
+    line-break: strict;
+  }
+}
+
+/* 語意詞組：確保一個詞組不被拆到兩行（用於標題斷句） */
+.ph {
+  display: inline-block;
+}
+
+/* Custom Editorial Typography Classes */
+.font-serif-tc {
+  font-family: 'Noto Serif TC', 'Songti TC', 'Source Han Serif TC', Georgia, serif;
+}
+
+.font-sans-tc {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "PingFang TC", sans-serif;
+}
+
+/* Brightland-grade Soft Luxury Shadows */
+.shadow-parchment {
+  box-shadow: 0 4px 20px -2px rgba(35, 30, 25, 0.04), 0 2px 8px -1px rgba(35, 30, 25, 0.02);
+}
+
+.shadow-parchment-lg {
+  box-shadow: 0 16px 36px -4px rgba(35, 30, 25, 0.07), 0 4px 12px -2px rgba(35, 30, 25, 0.03);
+}
+
+/* Subtle Washi Paper Texture Glow */
+.bg-washi {
+  background-color: #FBF9F5;
+  background-image: radial-gradient(rgba(170, 140, 100, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar for big tag bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

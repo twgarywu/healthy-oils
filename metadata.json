@@ -1,0 +1,6 @@
+{
+  "name": "有米的日子 · 健康好油生活誌",
+  "description": "澤禾有米的日子無添加安心冷壓好油百科，全方位解析黃金亞麻仁油與特級初榨苦茶油，提供日常飲食自測、發煙點圖鑑與一頁式專屬訂購指南。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
