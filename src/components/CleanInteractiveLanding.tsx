@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { BRAND_INFO } from '../data/brandData.ts';
 import { buildShopUrl } from '../utils/utmHelper.ts';
+import { FlaxseedSelectionGuide } from './FlaxseedSelectionGuide.tsx';
 
 interface QuestionItem {
   id: string;
@@ -547,17 +548,17 @@ export const CleanInteractiveLanding: React.FC<CleanInteractiveLandingProps> = (
         </section>
       )}
 
-      {/* ---------------- 5. TRANSPARENT COMPARISON MATRIX (極致乾淨的市場對照表) ---------------- */}
+      {/* ---------------- 5. TRANSPARENT COMPARISON MATRIX (食用油工藝與品質規格客觀對照) ---------------- */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="text-center max-w-3xl mx-auto space-y-2">
           <span className="text-sm font-bold text-[#C08A3E] uppercase tracking-wider font-sans">
-            CLEAR COMPARISON · 一目了然
+            OBJECTIVE COMPARISON · 客觀科學標準
           </span>
           <h2 className="font-serif-tc text-3xl sm:text-4xl md:text-5xl font-bold text-[#22201D] leading-tight">
-            市售大桶油 vs 澤禾「有米的日子」
+            食用油工藝與品質規格客觀對照
           </h2>
           <p className="text-base sm:text-lg text-stone-600 font-sans">
-            不說誇大的話，只用真實原料與檢驗數據，讓您安心比較。
+            不說誇大的話，只用真實原料品種、物理榨油工藝與檢驗數據，讓您安心理解好油差異。
           </p>
         </div>
 
@@ -566,12 +567,12 @@ export const CleanInteractiveLanding: React.FC<CleanInteractiveLandingProps> = (
             <table className="w-full text-left border-collapse text-base">
               <thead>
                 <tr className="border-b border-[#EDE7DC] bg-[#FBF9F5] text-stone-700 font-sans">
-                  <th className="py-5 px-6 font-bold text-stone-900 text-base sm:text-lg w-1/4">比較指標</th>
+                  <th className="py-5 px-6 font-bold text-stone-900 text-base sm:text-lg w-1/4">品質與製程指標</th>
                   <th className="py-5 px-6 font-semibold text-stone-600 text-sm sm:text-base w-3/8">
-                    一般市售大桶油 / 平價精煉油
+                    常見大宗商業規格
                   </th>
                   <th className="py-5 px-6 font-bold text-[#1A382B] text-base sm:text-lg w-3/8 bg-emerald-50/60">
-                    🌿 澤禾「有米的日子」冷壓好油
+                    🌿 澤禾「有米的日子」初榨標準
                   </th>
                 </tr>
               </thead>
@@ -586,7 +587,7 @@ export const CleanInteractiveLanding: React.FC<CleanInteractiveLandingProps> = (
                     </td>
                     <td className="py-5 px-6 text-stone-600 text-sm sm:text-base leading-relaxed">
                       <div className="flex items-start gap-2.5">
-                        <XCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                        <span className="text-stone-400 font-bold shrink-0 mt-0.5">•</span>
                         <span>{row.marketStandard}</span>
                       </div>
                     </td>
@@ -603,6 +604,9 @@ export const CleanInteractiveLanding: React.FC<CleanInteractiveLandingProps> = (
           </div>
         </div>
       </section>
+
+      {/* ---------------- 5.1 FLAXSEED OBJECTIVE SELECTION GUIDE (市售亞麻仁油推薦與挑選指南) ---------------- */}
+      <FlaxseedSelectionGuide shopUrl={shopUrl} />
 
       {/* ---------------- 6. POPULAR BUNDLES (太太一頁式熱銷組合方案) ---------------- */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
