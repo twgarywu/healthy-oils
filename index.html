@@ -15,11 +15,15 @@
     <meta property="og:title" content="有米的日子 · 健康好油生活誌 | 尋常餐桌上的安心冷壓好油" />
     <meta property="og:description" content="少吃油不等於比較健康，吃對好油才是關鍵。高山小果特級初榨苦茶油與加拿大黃金亞麻仁油，第一道冷壓無化學溶劑。" />
     <meta property="og:locale" content="zh_TW" />
+    <meta property="og:image" content="https://twgarywu.github.io/healthy-oils/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="有米的日子 · 健康好油生活誌 | 尋常餐桌上的安心冷壓好油" />
     <meta name="twitter:description" content="澤禾有米的日子無添加安心冷壓好油百科，全方位解析黃金亞麻仁油與特級初榨苦茶油。" />
+    <meta name="twitter:image" content="https://twgarywu.github.io/healthy-oils/images/og-image.jpg" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +50,7 @@
     }
     </script>
 
-    <!-- JSON-LD 2: Products Schema (讓 Google 搜尋直接抓取商品與評分) -->
+    <!-- JSON-LD 2: Products Schema (符合 Google Merchant listings 最新標準規範) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -57,18 +61,61 @@
           "position": 1,
           "name": "有米的日子 100% 特級初榨苦茶油",
           "description": "精選高山熟果小果，第一道物理低溫壓榨，絕不炒籽、不燥熱、發煙點高達 252°C。富含 80% 以上單元不飽和脂肪酸 Omega-9。",
+          "image": [
+            "https://twgarywu.github.io/healthy-oils/images/camellia-oil.jpg",
+            "https://img.1shop.tw/5mx7lzK1YNQmKpBNDLZqBVaX/Wqybvx25N9yJGKZgNREOMVPo/original.jpg"
+          ],
           "brand": {
             "@type": "Brand",
             "name": "有米的日子 · 澤禾"
           },
+          "sku": "ZEHEART-CAMELLIA-250ML",
           "offers": {
             "@type": "Offer",
+            "url": "https://www.zeheart.com/categories/澤禾苦茶油",
             "priceCurrency": "TWD",
             "price": "880",
+            "priceValidUntil": "2027-12-31",
+            "itemCondition": "https://schema.org/NewCondition",
             "availability": "https://schema.org/InStock",
             "seller": {
               "@type": "Organization",
               "name": "有米的日子"
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0",
+                "currency": "TWD"
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "TW"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 0,
+                  "maxValue": 2,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 3,
+                  "unitCode": "DAY"
+                }
+              }
+            },
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "TW",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 7,
+              "returnMethod": "https://schema.org/ReturnByMail",
+              "returnFees": "https://schema.org/FreeReturn"
             }
           },
           "aggregateRating": {
@@ -82,18 +129,61 @@
           "position": 2,
           "name": "有米的日子 特級冷壓黃金亞麻仁油",
           "description": "嚴選加拿大非基改頂級黃金亞麻仁籽，40°C 以下全程控溫第一道冷壓初榨，保留 55% 以上高活性植物性 Omega-3 (ALA)，清爽無腥味。",
+          "image": [
+            "https://twgarywu.github.io/healthy-oils/images/flaxseed-oil.png",
+            "https://img.1shop.tw/5mx7lzK1YNQmKpBNDLZqBVaX/LWx9yMqPlG7Qwk0ZlEpb1wO7/original.png"
+          ],
           "brand": {
             "@type": "Brand",
             "name": "有米的日子 · 澤禾"
           },
+          "sku": "ZEHEART-FLAXSEED-250ML",
           "offers": {
             "@type": "Offer",
+            "url": "https://www.zeheart.com/categories/黃金亞麻仁油",
             "priceCurrency": "TWD",
             "price": "680",
+            "priceValidUntil": "2027-12-31",
+            "itemCondition": "https://schema.org/NewCondition",
             "availability": "https://schema.org/InStock",
             "seller": {
               "@type": "Organization",
               "name": "有米的日子"
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0",
+                "currency": "TWD"
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "TW"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 0,
+                  "maxValue": 2,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 3,
+                  "unitCode": "DAY"
+                }
+              }
+            },
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "TW",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 7,
+              "returnMethod": "https://schema.org/ReturnByMail",
+              "returnFees": "https://schema.org/FreeReturn"
             }
           },
           "aggregateRating": {

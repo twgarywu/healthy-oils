@@ -111,7 +111,7 @@ export const CleanInteractiveLanding: React.FC<CleanInteractiveLandingProps> = (
   shopUrl,
   onNavigateTab
 }) => {
-  const [selectedIds, setSelectedIds] = useState<string[]>(['eating_out', 'cooking_smoke']);
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [showFeedback, setShowFeedback] = useState(false);
 
   const toggleQuestion = (id: string) => {
