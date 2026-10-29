@@ -13,6 +13,7 @@ import { StoreUrlModal } from './components/StoreUrlModal.tsx';
 import { BRAND_INFO } from './data/brandData.ts';
 import { ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
 import { updatePageSeo } from './utils/seoHelper.ts';
+import { trackTabChange } from './utils/analytics.ts';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('home');
@@ -37,6 +38,8 @@ export default function App() {
 
   useEffect(() => {
     updatePageSeo(activeTab);
+    const currentTab = MAIN_TABS.find((t) => t.id === activeTab);
+    trackTabChange(activeTab, currentTab?.name || activeTab);
   }, [activeTab]);
 
   const handleSaveShopUrl = (newUrl: string) => {
